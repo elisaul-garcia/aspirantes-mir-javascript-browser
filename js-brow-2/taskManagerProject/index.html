@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/checkbox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <title>To DO</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <form id="nueva-tarea-form" class="nueva-tarea-form">
+        <input id="nueva-tarea-input" class="nueva-tarea-input" type="text" placeholder="Ingresa tu nueva tarea"
+          name="nueva-tarea" autocomplete="off" required />
+        <button id="agregar" class="agregar-tarea-btn" type="submit">Add</button>
+      </form>
+    </section>
+    <section class="contenedor-lista">
+      <header class="filters">
+        <button class="filter-btn active" id="show-all" type="button">Show All</button> |
+        <button class="filter-btn" id="show-completed" type="button">Show Completed</button> |
+        <button class="filter-btn" id="show-pending" type="button">Show Pending</button>
+      </header>
+      <ul id="lista-tareas" class="lista-tareas">
+      </ul>
+      <button id="borrar-tareas-completadas" class="borrar-tareas-completadas-btn" type="button">Delete all
+        done</button>
+    </section>
+  </main>
+</body>
+
+</html>
