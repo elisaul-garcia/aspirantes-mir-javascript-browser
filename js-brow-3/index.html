@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+    <script defer src="./script.js"></script>
+</head>
+<body onload="mostrarNombre();">
+	<h1>Formulario de nombre</h1>
+	<form>
+		<label for="nombre">Ingresa tu nombre:</label>
+		<input id="nombre" type="text">
+		<button type="button" onclick="guardarNombre();">Guardar</button>
+	</form>
+	<hr>
+	<div id="resultado"></div>
+	<button type="button" onclick="borrarNombre();">Borrar Nombre</button>
+</body>
+</html>
